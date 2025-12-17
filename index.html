@@ -1,114 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TikTok Shop : de 0 à vos premières ventes</title>
-
-  <!-- TikTok Pixel -->
-  <script>
-  !function (w, d, t) {
-    w.TiktokAnalyticsObject=t;
-    var ttq=w[t]=w[t]||[];
-    ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];
-    ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
-    for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
-    ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
-    ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";
-    ttq._i=ttq._i||{};
-    ttq._i[e]=[];
-    ttq._i[e]._u=i;
-    ttq._t=ttq._t||{};
-    ttq._t[e]=+new Date;
-    ttq._o=ttq._o||{};
-    ttq._o[e]=n||{};
-    var o=d.createElement("script");
-    o.type="text/javascript";
-    o.async=!0;
-    o.src=i+"?sdkid="+e+"&lib="+t;
-    var a=d.getElementsByTagName("script")[0];
-    a.parentNode.insertBefore(o,a)};
-    ttq.load('YOUR_PIXEL_ID'); /* ✅ 替换为你的 Pixel ID */
-    ttq.page();
-  }(window, document, 'ttq');
-  </script>
+  <meta charset="UTF-8">
+  <title>Recevoir les informations gratuites</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body { font-family: Arial, sans-serif; background:#fff; margin:0; }
-    .wrap { max-width: 640px; margin: 0 auto; padding: 40px 20px; }
-    h1 { font-size: 34px; margin: 0 0 10px; }
-    p { margin: 0 0 18px; line-height: 1.5; }
-    .sub { color:#444; margin-bottom: 22px; }
-    .card { border:1px solid #e6e6e6; border-radius:10px; padding:18px; }
-    input { width:100%; padding:12px; font-size:16px; margin: 10px 0; box-sizing:border-box; }
-    button { width:100%; padding:12px; font-size:16px; border:0; border-radius:8px; cursor:pointer; }
-    .btn-main { background:#111; color:#fff; }
-    .divider { height:1px; background:#eee; margin:20px 0; }
-    .wa-btn {
-      display:block; text-align:center; padding:12px;
-      background:#25D366; color:#fff; text-decoration:none;
-      border-radius:8px; font-size:16px;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
     }
-    .note { font-size: 13px; color:#666; margin-top:12px; }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      background: #ffffff;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 16px 22px;
+      background-color: #007aff;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .btn:hover {
+      background-color: #005fd1;
+    }
+
+    .note {
+      margin-top: 16px;
+      font-size: 13px;
+      color: #777;
+    }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <h1>TikTok Shop : de 0 à vos premières ventes</h1>
-    <p class="sub">Adapté aux débutants / Pas encore de ventes / Sans stock</p>
+  <div class="container">
 
-    <div class="card">
-      <!-- 先表单 -->
-      <form id="leadForm" onsubmit="submitLead(event)">
-        <input id="name" type="text" placeholder="Votre nom" required />
-        <input id="wa" type="tel" placeholder="Numéro WhatsApp (ex : 33612345678)" required />
-        <button class="btn-main" type="submit">Demander des informations</button>
-      </form>
+    <h1>
+      Recevoir les informations gratuites
+    </h1>
 
-      <div class="divider"></div>
+    <p>
+      Avec TikTok Shop, lancez un e-commerce international sans stock,
+      sans logistique et sans entrepôt.
+    </p>
 
-      <!-- 再 WhatsApp 联系 -->
-      <p style="text-align:center;margin:0 0 12px;">
-        Vous préférez ? Contactez-nous directement sur WhatsApp :
-      </p>
+    <p>
+      Laissez vos informations et nous vous contacterons directement
+      sur WhatsApp pour vous expliquer le fonctionnement gratuitement.
+    </p>
 
-      <!-- ✅ 把 33612345678 替换为你的 WhatsApp：国家码+手机号（不要 + 号，不要空格） -->
-      <a class="wa-btn"
-         href="https://wa.me/33612345678"
-         target="_blank"
-         rel="noopener"
-         onclick="trackWhatsAppClick()">
-        Contacter via WhatsApp
-      </a>
+    <!-- 按钮：跳转到 Tally 表单 -->
+    <a class="btn"
+       href="https://tally.so/r/lbqBYv"
+       target="_blank"
+       rel="noopener">
+      Être contacté sur WhatsApp →
+    </a>
 
-      <p class="note">
-        Après votre demande, nous vous répondrons sur WhatsApp.
-      </p>
-    </div>
+    <p class="note">
+      Aucun spam. Vos informations resteront strictement confidentielles.
+    </p>
+
   </div>
-
-  <script>
-    // 表单提交：记录 SubmitForm 事件
-    function submitLead(e){
-      e.preventDefault();
-
-      // 可在这里做简单校验（可选）
-      var name = document.getElementById("name").value.trim();
-      var wa = document.getElementById("wa").value.trim();
-
-      // 触发 TikTok 事件（有 Pixel 才会回传）
-      try { ttq.track('SubmitForm'); } catch(err) {}
-
-      alert("Merci ! Nous vous contacterons sur WhatsApp très bientôt.");
-      // 这里暂不做真实提交（你若要存储数据，需要接后端/表单工具）
-    }
-
-    // WhatsApp 点击：记录 Contact 事件（可选）
-    function trackWhatsAppClick(){
-      try { ttq.track('Contact'); } catch(err) {}
-    }
-  </script>
 </body>
 </html>
-
